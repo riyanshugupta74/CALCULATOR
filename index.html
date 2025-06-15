@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Calculator App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <h1 class="calculator-title">Calculator</h1>
+        
+        <div class="display-area">
+            <input type="text" id="display" readonly>
+        </div>
+        
+        <div class="buttons-grid">
+            <button class="calc-button clear-btn" onclick="clearDisplay()">C</button>
+            <button class="calc-button clear-btn" onclick="deleteLast()">⌫</button>
+            <button class="calc-button operator-btn" onclick="addToDisplay('/')">/</button>
+            <button class="calc-button operator-btn" onclick="addToDisplay('*')">×</button>
+            
+            <button class="calc-button" onclick="addToDisplay('7')">7</button>
+            <button class="calc-button" onclick="addToDisplay('8')">8</button>
+            <button class="calc-button" onclick="addToDisplay('9')">9</button>
+            <button class="calc-button operator-btn" onclick="addToDisplay('-')">-</button>
+            
+            <button class="calc-button" onclick="addToDisplay('4')">4</button>
+            <button class="calc-button" onclick="addToDisplay('5')">5</button>
+            <button class="calc-button" onclick="addToDisplay('6')">6</button>
+            <button class="calc-button operator-btn" onclick="addToDisplay('+')">+</button>
+            
+            <button class="calc-button" onclick="addToDisplay('1')">1</button>
+            <button class="calc-button" onclick="addToDisplay('2')">2</button>
+            <button class="calc-button" onclick="addToDisplay('3')">3</button>
+            <button class="calc-button equals-btn" onclick="calculateResult()" rowspan="2">=</button>
+            
+            <button class="calc-button zero-btn" onclick="addToDisplay('0')">0</button>
+            <button class="calc-button" onclick="addToDisplay('.')">.</button>
+        </div>
+    </div>
+
+    <script src="demo.js"></script>
+</body>
+</html>
